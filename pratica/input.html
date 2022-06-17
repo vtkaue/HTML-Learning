@@ -1,0 +1,44 @@
+<!-- INPUT p.1 -->
+<!--
+    autocomplete => Completa o campo
+    autofocus => Quando a pagina for carregada, focara no input com o autofocus
+    value => Valor do input
+    readonly => Para somente leitura do input
+    placeholder => Texto que fica no input
+    disabled => Disabilita o input
+
+-->
+
+<form action="" method="get">
+  <label>
+    nome:
+    <input
+      autocomplete="email"
+      autofocus
+      value="Victor"
+      readonly
+      placeholder="Digite sue nome"
+      disabled
+    />
+  </label>
+</form>
+<!-- INPUT p.2 -->
+<!--
+        
+-->
+<form action="" method="post" enctype="multipart/form-data">
+  <input type="password" maxlength="6" minlength="3" inputmode="numeric" />
+  <input type="text" />
+  <input type="checkbox" name="" id="" />
+  <input type="email" name="" id="" />
+  <input type="number" name="" id="" />
+  <input type="radio" name="" id="" />
+  <input type="url" />
+  <input type="file" accept="image/png" multiple />
+  <!-- (SEMPRE QUE USAR INPUT TIPO FILE DE USAR:method="post" enctype="multipart/form-data")
+    Accept= Pode definir o tipo de arquivo que podemos mandar, podemos usar o (*) para escolher qualquer arquivo, com o multiple podemos selecionar multiplos arquivos -->
+
+  <input type="color" />
+  <input type="range" value="2" min="1" max="10" step="2" />
+  <!-- Value define o valor inicial que ele ira assumir, step define a quantidade de casas que ele pula -->
+</form>
